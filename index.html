@@ -13,7 +13,7 @@
     Object.defineProperty(obj, 'hello', {
         set: function (newVal) {
             document.getElementById('a').value = newVal;
-            document.getElementById('b').innerHTML = newVal;
+            document.getElementById('b').innerHTML = '<a href="document_fragment.html">'+newVal+'<\a>';
         }
     });
     document.addEventListener('keyup', function (e) {
