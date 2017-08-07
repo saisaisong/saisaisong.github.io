@@ -7,8 +7,9 @@
 <body>
 <div id="app">
     <h1>简单实现vue的双向绑定原理</h1>
-    <input type="text" id="a">
-    <span id="b"></span>
+    <span id="b">
+        <h1>createDocumentFragment 对html标签劫持</h1>
+    </span>
 </div>
 <script>
     var dom = nodeToFragment(document.getElementById('app'));
